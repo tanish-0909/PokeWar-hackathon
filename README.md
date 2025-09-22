@@ -10,8 +10,9 @@ directives
 3. Generate precise targeting coordinates based on mission parameters
 4. Minimize collateral damage and ammunition waste
 
-### Generated data:-
+### Generated data and model weights:-
     https://drive.google.com/drive/folders/1l3qMh0HDB6FHJWYbTNDZLRh9HXN4_Mvg?usp=drive_link
+(only available for 8 more months, till May 2026)
 
 ### Approach:- 
 1. Step 1 - generate data. in the problem statement, some examples of the complex orders from HQ have been given. 
@@ -78,7 +79,7 @@ Generating text data (`prompt_gen.py`):-
 ### Running Instructions to be completed
 1. Clone the repository and install requirements from requirements.txt
 2. Install the test images and prompts from the kaggle competition: https://www.kaggle.com/competitions/the-poke-war-hackathon-ai-guild-recuritment-hack
-3. Install the model weights from drive link here (only available for 8 more months, till May 2026): 
+3. Install the model weights from drive link above (only available for 8 more months, till May 2026)
 4. ensure you set correct paths in the `complete_pipeline.py`
 5. Run complete_pipeline.py
 
