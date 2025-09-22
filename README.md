@@ -59,7 +59,7 @@ Generating text data (`prompt_gen.py`):-
 5. Step 5 - integrating it all together
    1. **YOLOv12** was trained to detect all the pokemon in the image regardless of the target and return them in a clean csv format
    2. **BigBird** was trained to predict the target from the given sentence and output the respective targets in clean json format
-   3. `final_processing.py` contains the simple code which reads the outputs from the respective json and csv, mark the centers of the target and save it into a csv file
+   3. `final_processing.py` contains the simple code which reads the outputs from the respective json and csv generated above, marks the centers of the target and saves it into a csv file
    4. `check_sub.py` plots all the centers generated onto the images for manual assessment before final submission
 
 ### Code Quality
@@ -67,14 +67,18 @@ Generating text data (`prompt_gen.py`):-
 - **Documentation:** Every function and script includes clear docstrings and inline comments explaining intent and logic.
 
 ### Repository Structure
-- `image_gen.py`: Synthetic image creation pipeline
-- `augment_composites.py`: Image Data augmentation scripts
-- `prompt_gen.py`: Order text generation logic
-- `models/`: All model definition and training code
-- `utils/`: Some other codes used for background pre-processing and other tasks
+- `Data Generation scripts`
+  - `image_gen.py`: Synthetic image creation pipeline
+  - `augment_composites.py`: Image Data augmentation scripts
+  - `prompt_gen.py`: Order text generation logic
 - `final_processing.py`: Output post-processing and coordinate extraction
+- `complete_pipeline.py`: complete end to end pipeline which takes the test images and prompts as input and gives center containing csv as output
 - `check_sub.py`: Visualization/QA script
 
 ### Running Instructions to be completed
-1. Clone the repository and install requirements:
+1. Clone the repository and install requirements from requirements.txt
+2. Install the test images and prompts from the kaggle competition: https://www.kaggle.com/competitions/the-poke-war-hackathon-ai-guild-recuritment-hack
+3. Install the model weights from drive link here (only available for 8 more months, till May 2026): 
+4. ensure you set correct paths in the `complete_pipeline.py`
+5. Run complete_pipeline.py
 
