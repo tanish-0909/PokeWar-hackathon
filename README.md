@@ -10,6 +10,9 @@ directives
 3. Generate precise targeting coordinates based on mission parameters
 4. Minimize collateral damage and ammunition waste
 
+### Working demo for you to try out:-
+    https://legendarray-pokehacke.hf.space/
+
 ### Generated data and model weights:-
     https://drive.google.com/drive/folders/1l3qMh0HDB6FHJWYbTNDZLRh9HXN4_Mvg?usp=drive_link
 (only available for 8 more months, till May 2026)
