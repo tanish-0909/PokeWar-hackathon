@@ -47,8 +47,11 @@ Generating text data (`prompt_gen.py`):-
    4. together our final models have 459M parameters, below the 500M limit
 
 3. Step 3 - training the YOLOv12
-   1. dkj
-   2. jdh
+   1. **Data Preparation** – Converted COCO-format annotations to YOLO format, normalized bounding boxes, and ensured zero-based class IDs.  
+   2. **Dataset Split** – Used an 80/20 train-validation split with a fixed random seed for reproducibility.  
+   3. **Training Setup** – Initialized from a pretrained checkpoint and trained using Ultralytics’ `YOLO.train(...)` interface with validation monitoring.  
+   4. **Model Selection** – Chose the higher-capacity `yolo12x` model for better accuracy on the 15k-image dataset, accepting slower training and inference.  
+
 
 4. Step 4 - training the BigBird
    1. **Data Setup:** Loads JSON dataset, maps Pokémon classes to numeric labels, splits into train/val/test (70/15/15) with stratified sampling 
