@@ -1,0 +1,6 @@
+pandas
+typing
+torch
+numpy
+transformers
+ultralytics

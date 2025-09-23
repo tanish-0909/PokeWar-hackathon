@@ -74,7 +74,7 @@ Generating text data (`prompt_gen.py`):-
   - `prompt_gen.py`: Order text generation logic
 - `final_processing.py`: Output post-processing and coordinate extraction
 - `complete_pipeline.py`: complete end to end pipeline which takes the test images and prompts as input and gives center containing csv as output
-- `check_sub.py`: Visualization/QA script
+- `check_submissions.py`: Visualization/QA script
 
 ### Running Instructions to be completed
 1. Clone the repository and install requirements from requirements.txt
